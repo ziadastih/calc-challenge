@@ -1,0 +1,212 @@
+:root {
+  /* =========THEME 1 ==========*/
+
+  /* ========BG======== */
+  --Verydarkdesaturatedbluemainbackground: hsl(222, 26%, 31%);
+  --togglebackgroundkeypadbackground: hsl(223, 31%, 20%);
+  --screenbackground: hsl(224, 36%, 15%);
+
+  /* ==============keys========= */
+
+  --keybackground: hsl(225, 21%, 49%);
+  --keyshadow: hsl(224, 28%, 35%);
+
+  --keybackgroundtoggle: hsl(6, 63%, 50%);
+  --Darkredkeyshadow: hsl(6, 70%, 34%);
+
+  --Lightgrayishorangekeybackground: hsl(30, 25%, 89%);
+  --Grayishorangekeyshadow: hsl(28, 16%, 65%);
+
+  /* =============text========= */
+
+  -verydarkgrayishblue: hsl(221, 14%, 31%);
+
+  /* =========== THEME 2============= */
+  /* =============BG 2=========== */
+  --mainbackground2: hsl(0, 0%, 90%);
+  --togglebackgroundkeypadbackground2: hsl(0, 5%, 81%);
+  --screenbackground2: hsl(0, 0%, 93%);
+
+  /* =========KEYS 2============== */
+  --Darkmoderatecyankeybackground2: hsl(185, 42%, 37%);
+  --Verydarkcyankeyshadow2: hsl(185, 58%, 25%);
+
+  --Orangekeybackgroundtoggle2: hsl(25, 98%, 40%);
+  --Darkorangekeyshadow2: hsl(25, 99%, 27%);
+
+  --Lightgrayishyellowkeybackground2: hsl(45, 7%, 89%);
+  --Darkgrayishorangekeyshadow: hsl(35, 11%, 61%);
+
+  /* ===========TEXT============= */
+  --Verydarkgrayishyellow: hsl(60, 10%, 19%);
+
+  /* ===========THEME 3============== */
+  /* ============= BG3============= */
+  --Verydarkvioletmainbackground: hsl(268, 75%, 9%);
+  --togglebackgroundkeypadbackgroundscreenbackground: hsl(268, 71%, 12%);
+
+  /* =======keys 3================= */
+  --Darkvioletkeybackground3: hsl(281, 89%, 26%);
+  --Vividmagentakeyshadow3: hsl(285, 91%, 52%);
+
+  --Purecyankeybackgroundtoggle: hsl(176, 100%, 44%);
+  --Softcyankeyshadow3: hsl(177, 92%, 70%);
+
+  --Verydarkvioletkeybackground3: hsl(268, 47%, 21%);
+  --Darkmagentakeyshadow3: hsl(290, 70%, 36%);
+
+  /* =========text 3============== */
+  --Lightyellow: hsl(52, 100%, 62%);
+  --Verydarkblue: hsl(198, 20%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ==============body====================== */
+body {
+  background-color: var(--Verydarkdesaturatedbluemainbackground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* ===========calculator============== */
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header-themes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+.title {
+  font-family: sans-serif;
+  color: white;
+}
+.themes {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+
+  gap: 10px;
+}
+.themes p {
+  font-size: 9px;
+  display: flex;
+  align-items: flex-end;
+}
+.theme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.animation-container {
+  height: 10px;
+  border-radius: 25px;
+  width: 35px;
+  background-color: var(--togglebackgroundkeypadbackground);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.circle {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: var(--keybackgroundtoggle);
+  position: absolute;
+  z-index: 1;
+  margin-left: 2px;
+}
+
+.screen {
+  width: 300px;
+  height: 60px;
+  background-color: var(--screenbackground);
+  margin-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 34px;
+  color: white;
+  padding-right: 10px;
+  font-weight: 700;
+}
+
+.calculator-grid {
+  width: 300px;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  grid-template-columns: repeat(4, auto);
+  margin-top: 20px;
+  background-color: var(--togglebackgroundkeypadbackground);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Lightgrayishorangekeybackground);
+  box-shadow: 0px 1px 0px var(--Grayishorangekeyshadow);
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+#reset {
+  background-color: var(--keybackground);
+  box-shadow: 0px 1px 0px var(--keyshadow);
+  color: white;
+  text-transform: uppercase;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 115px;
+}
+#del {
+  background-color: var(--keybackground);
+  box-shadow: 0px 1px 0px var(--keyshadow);
+  color: white;
+  text-transform: uppercase;
+}
+#equal {
+  background-color: var(--keybackgroundtoggle);
+  box-shadow: 0px 1px 0px var(--Darkredkeyshadow);
+  color: white;
+  text-transform: uppercase;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  width: 115px;
+}
