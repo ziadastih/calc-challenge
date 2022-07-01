@@ -185,6 +185,7 @@ body {
   width: 50px;
   height: 30px;
   cursor: pointer;
+  font-weight: 700;
 }
 #reset {
   background-color: var(--keybackground);
@@ -209,4 +210,115 @@ body {
   grid-column-start: 3;
   grid-column-end: 5;
   width: 115px;
+}
+
+/* ============js class theme 2======== */
+.screen2 {
+  background-color: var(--screenbackground2);
+  color: var(--Verydarkgrayishyellow);
+}
+.title2 {
+  color: var(--Verydarkgrayishyellow);
+}
+.themes2 {
+  color: var(--Verydarkgrayishyellow);
+}
+.animation-container2 {
+  background-color: var(--togglebackgroundkeypadbackground2);
+  justify-content: center;
+}
+
+.circle2 {
+  background-color: var(--Orangekeybackgroundtoggle2);
+}
+.calculator-grid2 {
+  background-color: var(--togglebackgroundkeypadbackground2);
+}
+
+.grid2 {
+  background-color: var(--Lightgrayishyellowkeybackground2);
+  box-shadow: 0px 1px 0px var(--Darkgrayishorangekeyshadow);
+  color: var(--Verydarkgrayishyellow);
+}
+.equal2 {
+  background-color: var(--Orangekeybackgroundtoggle2);
+  box-shadow: 0px 1px 0px var(--Darkorangekeyshadow2);
+}
+
+.reset2,
+.del2 {
+  background-color: var(--Darkmoderatecyankeybackground2);
+  box-shadow: 0px 1px 0px var(--Verydarkcyankeyshadow2);
+}
+
+/* ============js class theme 3======== */
+.screen3 {
+  background-color: var(--togglebackgroundkeypadbackgroundscreenbackground);
+  color: var(--Lightyellow);
+}
+.title3 {
+  color: var(--Lightyellow);
+}
+.themes3 {
+  color: var(--Lightyellow);
+}
+.animation-container3 {
+  background-color: var(--togglebackgroundkeypadbackgroundscreenbackground);
+  justify-content: flex-end;
+}
+
+.circle3 {
+  background-color: var(--Purecyankeybackgroundtoggle);
+}
+.calculator-grid3 {
+  background-color: var(--togglebackgroundkeypadbackgroundscreenbackground);
+}
+
+.grid3 {
+  background-color: var(--Verydarkvioletkeybackground3);
+  box-shadow: 0px 1px 0px var(--Darkmagentakeyshadow3);
+  color: var(--Lightyellow);
+}
+
+.equal3 {
+  background-color: var(--Purecyankeybackgroundtoggle);
+  box-shadow: 0px 1px 0px var(--Softcyankeyshadow3);
+  color: var(--Verydarkblue);
+}
+
+.reset3,
+.del3 {
+  background-color: var(--Darkvioletkeybackground3);
+  box-shadow: 0px 1px 0px var(--Darkvioletkeybackground3);
+  color: white;
+}
+
+/* =========hover for every theme ======*/
+
+.overlay {
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+  width: 50px;
+
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  transition: 300ms ease-in;
+}
+.overlay-double {
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+  width: 115px;
+
+  height: 30px;
+  border-radius: 5px;
+  transition: 300ms ease-in;
+}
+.overlay:hover {
+  opacity: 0.4;
+}
+.overlay-double:hover {
+  opacity: 0.4;
 }
